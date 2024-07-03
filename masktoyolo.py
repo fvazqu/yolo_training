@@ -4,6 +4,7 @@ import numpy as np
 from pathlib import Path
 
 
+# if you want to include smaller bounding boxes, change the min_size variable
 def mask_to_bbox(mask, min_size=10):
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     bboxes = []
@@ -62,9 +63,11 @@ def process_dataset(image_dir, mask_dir, output_dir, class_id=0):
         save_yolo_annotations(bboxes, class_id, img_width, img_height, annotation_path)
         print(f"Saved annotations to {annotation_path}")
 
+# Your path to your images
 name = 'Kvasir-SEG'
 cat = 'validation'
 
+# Can change the bottom to your path or use the 'name' and 'cat' variables to make it easier
 image_dir = f'C:path\\{name}\\{cat}\\images'
 mask_dir = f'C:path\\{name}\\{cat}\\masks'
 output_dir = f'C:path\\{name}\\{cat}\\annotations'

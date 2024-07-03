@@ -40,12 +40,10 @@ def visualize_annotations(image_dir, annotation_dir, output_dir):
         cv2.imwrite(str(output_image_path), image)
         print(f"Saved visualized image to {output_image_path}")
 
-name = 'Kvasir-SEG'
-cat = 'validation'
 
-image_dir = f'C:path\\{name}\\{cat}\\images'
-annotation_dir = f'C:path\\{name}\\{cat}\\annotations'
-output_dir = f'C:path\\{name}\\{cat}\\visualized'
+image_dir = 'your/path/to/images/folder'
+annotation_dir = 'your/path/to/annotations/folder'
+output_dir = 'your/path/to/save/visualized/images/folder'
 
 visualize_annotations(image_dir, annotation_dir, output_dir)
 
