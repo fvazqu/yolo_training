@@ -1,0 +1,5 @@
+train:
+val: Polyp_data\test
+test:
+nc: 1  # number of classes
+names: ['polyp']  # names of each class
