@@ -1,5 +1,5 @@
-train: Polyp_data\train
-val: Polyp_data\val
-test: Polyp_data\test
+train: /content/Polyp_data/train
+val: /content/Polyp_data/val
+test: /content/Polyp_data/test
 nc: 1  # number of classes
 names: ['polyp']  # names of each class
