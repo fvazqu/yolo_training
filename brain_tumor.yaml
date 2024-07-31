@@ -1,0 +1,5 @@
+train: /content/new_brain_tumor_set/train
+val: /content/new_brain_tumor_set/val
+test:
+nc: 4  # number of classes
+names: ['pituitary', 'meningioma', 'glioma', 'notumor']  # names of each class
