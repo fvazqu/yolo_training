@@ -1,0 +1,5 @@
+train: /content/ham_10000/train
+val: /content/ham_10000/val
+test: 
+nc: 7  # number of classes
+names: ['MEL', 'NV', 'BCC', 'AKIEC', 'BKL', 'DF', 'VASC']  # names of each class
