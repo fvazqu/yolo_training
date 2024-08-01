@@ -1,0 +1,5 @@
+train: /content/new_fruits_veggies/train
+val: /content/new_fruits_veggies/val
+test:
+nc: 17  # number of classes
+names: ['banana-bag', 'banana', 'blackberries', 'raspberry', 'lemon-bag', 'lemon', 'grapes-bag', 'grapes', 'tomato-bag', 'tomato', 'apple-bag', 'apple', 'chili-bag', 'chili', 'orange', 'pineapple', 'watermelon']  # names of each class
