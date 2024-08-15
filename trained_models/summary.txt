@@ -1,5 +1,5 @@
 Models:
 YOLO-f: trained on fruits and veggies
 YOLO-c: trained on COCO dataset
-YOLO-a: trained on acne dataset
+YOLO-a: trained on Ham-10000 dataset
 YOLO-b: trained on brain tumor dataset
