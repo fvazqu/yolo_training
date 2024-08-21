@@ -17,9 +17,6 @@ def train_model():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(f"Using device: {device}")
 
-    # Set up TensorBoard writer
-    writer = SummaryWriter(log_dir="runs/yolov8_training")
-
     # Train the model
     results = model.train(data="polyp.yaml",
                           pretrained=True,
@@ -30,10 +27,9 @@ def train_model():
                           name=f"{path}/fine-tuned",
                           plots=True,
                           verbose=True,
+                          patience=5
                           )
 
-    # Close the TensorBoard writer
-    writer.close()
 
 if __name__=="__main__":
     train_model()
